@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  /* VPN PRO MAX logo palette */
+  --neon-cyan:    #00aeef;
+  --neon-blue:    #00d4ff;
+  --neon-aqua:    #22d3ee;
+  --neon-purple:  #a855f7;
+  --neon-magenta: #d946ef;
+  --neon-gold:    #fbbf24;
+  --neon-orange:  #f59e0b;
+  --neon-green:   #10b981;
+
+  --bg-dark:      #020617;
+  --bg-elevated:  #0a1224;
+  --bg-card:      rgba(0, 174, 239, 0.06);
+  --border:       rgba(0, 174, 239, 0.14);
+  --border-strong: rgba(0, 212, 255, 0.35);
+
+  --text-primary: #f8fafc;
+  --text-muted:   rgba(248, 250, 252, 0.55);
+
+  --glow-cyan:    0 0 40px rgba(0, 174, 239, 0.35);
+  --glow-magenta: 0 0 40px rgba(217, 70, 239, 0.3);
+  --glow-gold:    0 0 28px rgba(251, 191, 36, 0.35);
+
+  --grad-brand:   linear-gradient(135deg, #00aeef 0%, #22d3ee 40%, #a855f7 75%, #d946ef 100%);
+  --grad-cta:     linear-gradient(135deg, #00aeef 0%, #7c3aed 55%, #d946ef 100%);
+  --grad-gold:    linear-gradient(135deg, #fbbf24, #f59e0b);
+
+  --radius-xl:    24px;
+  --radius-2xl:   32px;
+  --font-display: 'Orbitron', sans-serif;
+  --font-body:    'Outfit', sans-serif;
+}
+
+html { scroll-behavior: auto; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #020617; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--neon-cyan), var(--neon-magenta));
+  border-radius: 3px;
+}
+
+.glass {
+  background: rgba(0, 174, 239, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 212, 255, 0.16);
+}
+
+.hero__globe--float {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.glow-text {
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-gold {
+  background: var(--grad-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
