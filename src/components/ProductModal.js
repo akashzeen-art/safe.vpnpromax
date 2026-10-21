@@ -19,8 +19,8 @@ const DOWNLOADS = [
   {
     id: "android",
     platform: "Android",
-    file: "VPNProMax.apk",
-    href: "https://vpnpromax.com/VPNProMax.apk",
+    file: "VPNManager.apk",
+    href: "https://vpnpromax.com/VPNManager.apk",
     hint: "Mobile app · .apk",
   },
 ];
